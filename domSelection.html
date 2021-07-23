@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+    <p>this is selected by name using d3.select()</p>
+    <p id="p2">this is selected by ID using d3.select() </p>
+
+    <h2> These lines </h2>
+    <h2> are all selected at a time </h2>
+    <h2> by name using </h2>
+    <h2> d3.selectAll() </h2>
+
+    <!--nested example-->
+
+    <table>
+        <tr>
+            <td>
+            td 1
+            </td>
+            <td>
+                td 2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Three
+            </td>
+            <td>
+                Four
+            </td>
+        </tr>
+        </table>
+
+    <script>
+        d3.select("p").style("color", "red");
+        d3.select("#p2").style("color", "green");
+
+        d3.selectAll("h2").style("color","blue");
+
+
+        //selecting all td of 1st tr
+
+        d3.select("tr").selectAll("td").style("color","brown")
+
+        //slecting 1st td of all trs
+        
+        d3.selectAll("tr").select("td").style("color","IndianRed")
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+CDN : <script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+d3.select() and d3.selectAll()
+------------------------------
+
+d3.select() it is similar to getElementByID. It will get only the 1st element of specified tag where as d3.selectAll() will get all the elements with sepecified tags.For example see code "domSelection.html"
+--> this should be written in <script> tag
+--> we can select by using name or id or class
+--> using d3.select() and d3.selectAll() we can also select nested items such as all <td>s or 1 <tr>
